@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.App{
+    background-color: black;
+    color: white;
+}
+.header{
+    display: flex;
+    padding: 10px 20px;
+    height: 40px;
+    justify-content: space-between;
+}
+.namaiva{
+    font-size: larger;
+    font-weight: bold;
+    line-height: 1em;
+}
+.namaiva>.badge>a{
+    text-decoration: none;
+    color: white;
+    line-height: 1em;
+}
+.middle>.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1120px;
+    margin-top: 140px;
+    height: 100%;
+}
+.About{
+    width: inherit;
+    font-size: 19px;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.About>h6>i{
+    font-size: 24px;
+}
+.Photo{
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 40px;
+    /* text-align: center; */
+}
+.Photo>img{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0%;
+    /* border: 1px solid gray; */
+}
+.projects{
+    width: inherit;
+    min-height: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.dots{
+    margin: 10px 125px;
+}
+.destination{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1.5fr;
+    gap: 10px;
+    font-size: 19px;
+    font-weight: 300;
+}
+.destination>.year{
+    width: 90px;
+}
+.destination>img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.iframe{
+    height: 140px;
+}
+.iframe>iframe{
+    height: inherit;
+    z-index: 2;
+    bottom: 0px;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    width: 440px;
+    border-radius: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list{
+    width: 900px;
+    height: 100px;
+    margin-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list>.carousel{
+    width: inherit;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.carousel-item-custom{
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.imglogos{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.special{
+    object-fit: contain;
 }
